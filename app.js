@@ -18,6 +18,11 @@ alert_dash.addEventListener("click", function() {
   alert("Cannot be showcased publicly (For enterprise)");
 });
 
+var alert_dash = document.getElementById("alert_view_all");
+alert_dash.addEventListener("click", function() {
+  event.preventDefault();
+  alert("More project will be adding in the following days");
+});
 //------ dashboard
 const images = [
   "img/dashboard1.png",
