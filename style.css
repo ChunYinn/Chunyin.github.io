@@ -180,7 +180,7 @@ a {
 }
 
 .welcome-image {
-  margin-left: 70px; 
+  margin-left: 70px; /* Adjust this value to create space between the text and image */
   /* height: auto; */
   /* width: 25%; */
   /* min-width: 200px; */
@@ -206,22 +206,20 @@ a {
 }
 
 /* skill section --------------- */
-.skill-container {
+.about-container {
   width: 65%;
   margin: auto;
 }
 
-.skill-section {
+.about-section {
   text-align: center;
   padding: 10rem 2rem;
   color: black;
-  /* background: var(--main-blue); */
 }
 
 .section-header {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .section-header span {
@@ -254,14 +252,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
   flex-direction: column;
   height: 600px;
-  /* min-width: auto; */
-}
-
-.about-content {
-  margin-bottom: 40px;
 }
 
 .slide {
@@ -270,20 +262,18 @@ a {
   align-items: center;
   width: 100%;
   max-width: 25%;
-  z-index: 1;
   height: 100%;
 }
 
 .slide > img {
   width: 100%;
+  max-width: 100%;
   height: 100%;
-  /* object-fit: cover; */
 }
 
 .slide {
   animation-name: fade;
   animation-duration: 1s;
-  z-index: 1;
 }
 
 @keyframes fade {
@@ -293,7 +283,6 @@ a {
 
 /* Media queries */
 @media only screen and (max-width: 900px) {
-  
   .slide {
     max-width: 50%;
   }
@@ -301,7 +290,6 @@ a {
     min-width: 350px;
   }
 }
-
 
 /* project ----------------*/
 #project {
