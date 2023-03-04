@@ -92,7 +92,12 @@ a {
 }
 
 .nav-branding {
-  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-branding img {
+  width: 25%;
 }
 
 /* for hambuger menu */
@@ -179,37 +184,24 @@ a {
   font-style: italic;
 }
 
-.welcome-image {
-  margin-left: 70px; /* Adjust this value to create space between the text and image */
-  /* height: auto; */
-  /* width: 25%; */
-  /* min-width: 200px; */
-  /* border-radius: 25%; */
-}
-
-.welcome-image > img {
-  max-width: 100%;
-  height: auto;
-  /* border-radius: 40%; */
-}
-
 /* Media queries */
 @media only screen and (max-width: 1024px) {
   .welcome-section {
     flex-direction: column;
   }
   
-  .welcome-image {
-    margin-left: 0;
-    margin-top: 20px; 
-  }
 }
 
-/* skill section --------------- */
+/* about section --------------- */
 .about-container {
   width: 65%;
   margin: auto;
+  /* border: 5px solid black ; */
 }
+
+/* .about-content {
+  margin-top: 50px;
+} */
 
 .about-section {
   text-align: center;
@@ -286,8 +278,8 @@ a {
   .slide {
     max-width: 50%;
   }
-  .about-content {
-    min-width: 350px;
+  .about-container {
+    width: 85%;
   }
 }
 
@@ -389,7 +381,7 @@ a {
 /* footer ------------*/
 .footer-basic {
   padding:30px 0;
-  background-color:#4b4c4d;
+  background-color: #008B8F;
   color:#ffffff;
 }
 
@@ -430,7 +422,7 @@ a {
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:1px solid #ccc;
+  border:1px solid var(--main-blue100);
   margin:0 8px;
   color:inherit;
   opacity:0.75;
